@@ -150,8 +150,8 @@ $(".rps").on("click", function()
         choice = $("#"+choice).text();
         theirChoice = $("#"+theirChoice).text();
 
-    	$("#results .modal-body").append("You chose "+choice);
-    	$("#results .modal-body").append("Your opponent chose "+theirChoice);
+    	$("#results .modal-body").append("You chose "+choice+"<br>");
+    	$("#results .modal-body").append("Your opponent chose "+theirChoice+"<br>");
         $("#results").modal('show');
         data.ref(thisPlayer+"/choice").set("");
         data.ref(otherPlayer+"/choice").set("");
